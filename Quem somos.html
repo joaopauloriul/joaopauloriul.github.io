@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sobre Nós</title>
+
+    <!-- Fonte Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Externo -->
+     <link rel="stylesheet" href="css/style.css">
+    
+
+    <style>
+        /* CSS Interno */
+        h2 {
+            font-size: 2.5em;
+            color: black;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .sobre-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .sobre-texto, .sobre-imagem {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid black;
+            box-shadow: 0 2px 5px black;
+        }
+
+        .sobre-texto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .sobre-imagem img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header style="background: linear-gradient( #114bbf); padding: 20px; color: black; text-align: center;">
+        <h1>Sobre Nossa Empresa</h1>
+        <nav>
+            <ul style="list-style-type: none; margin: 0; padding: 0;">
+                <li style="display: inline; margin-right: 10px;"><a href="index.html" style="color: black;">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Quem Somos</h2>
+        <div class="sobre-container">
+            <article class="sobre-texto">
+                <h3>Nossa História</h3>
+                <p>Na AlphaData Consultoria, somos apaixonados por transformar dados em estratégias que impulsionam negócios. Desde 2020, atuamos no mercado oferecendo soluções inovadoras e personalizadas em análise de dados, atendendo empresas de diversos setores. Ao longo desses anos, nos consolidamos como uma consultoria confiável e eficiente, ajudando nossos clientes a tomar decisões mais precisas e fundamentadas, sempre com foco em resultados tangíveis.</p>
+                <p>Nossa história começou com um pequeno time de especialistas em análise de dados, unidos pelo propósito de democratizar o uso estratégico das informações. Com o tempo, expandimos nossa equipe e nosso portfólio de serviços, adotando as tecnologias mais avançadas e as melhores práticas do mercado. Hoje, a AlphaData é reconhecida por sua expertise em modernização de análises em nuvem, dashboards personalizados, automação de processos e governança de dados, sempre priorizando a segurança e a excelência em cada projeto.</p>
+                <p>Com dedicação e compromisso, continuamos a crescer e a evoluir, acompanhando as mudanças rápidas no mundo dos dados, para garantir que nossos clientes estejam sempre à frente da concorrência.</p>
+            </article>
+            
+            <article class="sobre-imagem">
+                <img src="imagens/sos-amazonia.jpg" alt="">
+            </article>
+        </div>
+    </section>
+
+    <section>
+        <h2>Nossa Missão</h2>
+        <div class="sobre-container" style="display: flex; flex-direction: row-reverse;">
+            <article class="sobre-texto">
+                <h3>O que empregamos</h3>
+                <p>Nossa missão é capacitar empresas a tomarem decisões mais inteligentes e estratégicas, transformando dados complexos em insights valiosos e práticos. Buscamos fornecer soluções de análise de dados que impulsionem o crescimento, a inovação e a eficiência dos nossos clientes, sempre com um foco em segurança, precisão e personalização. Acreditamos que o poder dos dados pode transformar negócios, e nosso compromisso é ser o parceiro confiável que ajuda a desbloquear esse potencial, trazendo resultados mensuráveis e sustentáveis.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer style="background-color: #114bbf; color: white; text-align: center; padding: 20px;">
+        <p>&copy; 2020 AlphaData Consultoria. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

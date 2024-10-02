@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contato</title>
+
+    <!-- Fonte Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS Interno */
+        h2 {
+            font-size: 2em;
+            color: black;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #114bbf;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #114bbf;
+        }
+
+        .radio-group, .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        .radio-group label, .checkbox-group label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header style="background-color: #114bbf; padding: 20px; color: white; text-align: center;">
+        <h1>Entre em Contato Conosco</h1>
+        <nav>
+            <ul style="list-style-type: none; margin: 0; padding: 0;">
+                <li style="display: inline; margin-right: 10px;"><a href="Home.html" style="color: white;">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Formulário de Contato</h2>
+        <form action="" method="POST">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required minlength="3">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(DDD)-XXXXX-XXXX"  required>
+            
+
+            <label for="assunto">Assunto</label>
+            <select id="assunto" name="assunto" required>
+                <option value="">Selecione um assunto</option>
+                <option value="suporte">Suporte</option>
+                <option value="vendas">Vendas</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" rows="5" required></textarea>
+
+            <div class="radio-group">
+                <label>Como conheceu nosso site?<label>
+                <label><input type="radio" name="conheceu" value="amigos" required> Amigos</label>
+                <label><input type="radio" name="conheceu" value="internet" required> Internet</label>
+                <label><input type="radio" name="conheceu" value="outro" required> Outro</label>
+            </div>
+
+            <div class="checkbox-group">
+                <label> Deseja receber noticias sobre o site?<label>
+                <input type="checkbox" name="newsletter" value="sim">
+            </div>
+
+            <button type="submit">Enviar</button>
+            <button type="reset" style="background-color: red;">Limpar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div style="text-align: center; padding: 20px; background-color: #114bbf; color: white;">
+            <p>&copy; 2020 AlphaData Consultoria. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

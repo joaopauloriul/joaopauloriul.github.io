@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfólio</title>
+
+    <!-- Fonte Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Externo -->
+     <link rel="stylesheet" href="css/style.css">
+    
+
+    <style>
+        /* CSS Interno */
+        h2 {
+            font-size: 2.5em;
+            color: #333;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img, .gallery-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .overlay p {
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <header style="background: linear-gradient( #114bbf); padding: 20px; color: black; text-align: center;">
+        <h1>Galeria</h1>
+        <nav>
+            <ul style="list-style-type: none; margin: 0; padding: 0;">
+                <li style="display: inline; margin-right: 10px;"><a href="index.html" style="color: black;">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Portfólio</h2>
+        <div class="gallery-container">
+            <!-- Item 1 - Imagem -->
+            <article class="gallery-item">
+                <img src="https://i.pinimg.com/736x/15/28/40/152840a623436d49ebc85093d4e7572c.jpg" alt="">
+                <div class="overlay">
+                </div>
+            </article>
+
+            <!-- Item 2 - Imagem -->
+            <article class="gallery-item">
+                <img src="https://shoppingunisul.com.br/palhoca/wp-content/uploads/2019/02/santander.jpg" alt="">
+            </article>
+
+            <!-- Item 3 - Imagem -->
+            <article class="gallery-item">
+                <img src="https://seeklogo.com/images/M/mercado-livre-logo-1D23FA3B7C-seeklogo.com.png" alt="">
+            </article>
+
+            <!-- Item 4 - Imagem -->
+            <article class="gallery-item">
+                <img src="https://www.lancerural.com.br/wp-content/uploads/2020/04/picpay-logo-1.jpg" alt="">
+            </article>
+        </div>
+    </section>
+
+    <footer style="background-color: #114bbf; color: white; text-align: center; padding: 20px;">
+        <p>&copy; 2020 AlphaData Consultoria. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

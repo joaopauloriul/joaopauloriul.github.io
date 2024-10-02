@@ -1,0 +1,59 @@
+/* CSS Externo */
+
+/* Definição de corpo */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    background-image: url(https://t4.ftcdn.net/jpg/04/89/68/23/360_F_489682374_ckc0OVyT6Av0NGcuYbwBSCxy62blF4CQ.jpg);
+}
+
+/* Background gradiente para o header */
+header {
+    background: linear-gradient(90deg, #114bbf, #3f78e9);
+    color: white;
+}
+
+/* Estilo para links */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Box model aplicado nas seções */
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tipografia para o footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Efeito hover nos links do menu */
+nav a:hover {
+    color: #114bbf;
+}
+
+/* Flexbox aplicado aos artigos */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

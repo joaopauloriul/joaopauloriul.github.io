@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Serviços</title>
+
+    <!-- Fonte Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Externo -->
+     <link rel="stylesheet" href="css/style.css">
+    
+
+    <style>
+        /* CSS Interno */
+        h2 {
+            font-size: 2.5em;
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .servicos-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .servico-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .servico-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .servico-card h3 {
+            margin: 15px 0;
+            font-size: 1.5em;
+            color: #114bbf;
+        }
+
+        .servico-card p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .serviço-video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <header style="background: linear-gradient(90deg, #114bbf, white); padding: 20px; color: white; text-align: center;">
+        <h1>Soluções</h1>
+        <nav>
+            <ul style="list-style-type: none; margin: 0; padding: 0;">
+                <li style="display: inline; margin-right: 10px;"><a href="index.html" style="color: white;">Home</a></li>
+                <li style="display: inline; margin-right: 10px;"><a href="sobre.html" style="color: white;">Sobre</a></li>
+                <li style="display: inline; margin-right: 10px;"><a href="servicos.html" style="color: white;">Serviços</a></li>
+                <li style="display: inline; margin-right: 10px;"><a href="contato.html" style="color: white;">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-container">
+            <!-- Serviço 1 -->
+            <article class="servico-card">
+                <img src="https://files.oaiusercontent.com/file-rO6OBmUFImuCiPoC2U5R7koE?se=2024-10-01T23%3A38%3A21Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Deb28e470-e655-42c5-b665-b725c72074ce.webp&sig=X1MNDOZPISFK1tw6We3UQM20IrycHx6aSfkDy%2BES4Nk%3D" alt="Serviço 1">
+                <h3>
+                    Modernização de análises em nuvem</h3>
+                <p>Leve suas análises para o próximo nível com a modernização em nuvem! Implementamos soluções avançadas que garantem maior agilidade, escalabilidade e segurança para seus dados, permitindo que sua empresa acompanhe o ritmo da inovação com eficiência e precisão.</p>
+            </article>
+
+            <!-- Serviço 2 -->
+            <article class="servico-card">
+                <img src="https://files.oaiusercontent.com/file-AyGPhaVC7aIt7SbP8xlsscrc?se=2024-10-01T23%3A42%3A59Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dd4d7cfcc-4bb7-43a6-8e34-d925fbaaf55f.webp&sig=G4CLpoj8JZSgKrTq%2BhUggwbI2GSXBEZL/gn6qEYV1gM%3D" alt="Serviço 2">
+                <h3>Aceleração em ciência de dados</h3>
+                <p>Potencialize o poder dos seus dados! Com nossas soluções de aceleração, você obtém insights mais rápidos e precisos, otimizando o desempenho das suas análises e decisões estratégicas. Transforme dados complexos em resultados ágeis e eficientes para o seu negócio.</p>
+            </article>
+
+            <!-- Serviço 3 -->
+            <article class="servico-card">
+                <img src="https://files.oaiusercontent.com/file-CsBy6hPLEUaXgRVyPkrduT7G?se=2024-10-01T23%3A46%3A26Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Da8f2f9b3-5bed-442d-b100-2d50f300f630.webp&sig=XYdRdtIv%2BQMW5bvUNBc1Z6rSIY3Tqaxsggg/O2I9sMU%3D" alt="Serviço 3">
+                <h3>Automatização de Processos com Dados</h3>
+                <p>Automatize processos repetitivos e otimize suas operações com soluções baseadas em dados. Nossos sistemas automatizados garantem eficiência, redução de custos e maior precisão nas decisões.</p>
+            </article>
+
+            <!-- Serviço 4 -->
+            <article class="servico-card">
+                <img src="https://files.oaiusercontent.com/file-jzbcddXiZOwBRzabV7qhq8jk?se=2024-10-01T23%3A46%3A33Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D99477676-bb54-4736-841a-c2e8ee575701.webp&sig=McqojGSop9bwvirrdL3igWbIBwoFMrGTaD7TudboBuk%3D" alt="Serviço 4">
+                <h3>Integração de Dados Multiplataforma</h3>
+                <p>Conecte todas as suas fontes de dados em um único sistema. Implementamos integrações multiplataforma para consolidar informações e facilitar a análise, melhorando a tomada de decisões.</p>
+            </article>
+
+            <!-- Serviço 5 -->
+            <article class="servico-card">
+                <img src="https://files.oaiusercontent.com/file-hfAcP5YyGl1Q0rb8MKl3ZwOY?se=2024-10-01T23%3A46%3A43Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D4f2341ff-b7bd-4dbf-a7f8-b58808e44264.webp&sig=hlKePuUYOjsiGkoLESRaKnO64Tcx/d2hLC5t4sHKMvA%3D" alt="Serviço 5">
+                <h3>Desenvolvimento de Dashboards Personalizados</h3>
+                <p>Tenha uma visão clara e em tempo real do desempenho do seu negócio. Criamos dashboards personalizados que simplificam a visualização de métricas e indicadores-chave para o seu time.<p>
+            </article>
+
+            <!-- Serviço 6 -->
+            <article class="servico-card">
+                <img src="https://files.oaiusercontent.com/file-0GfWW2yJUrS74iJFp51gdgKQ?se=2024-10-01T23%3A46%3A53Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D2335a8b3-d592-4d4a-a327-0a48fa3d275c.webp&sig=g9Xbh91IWVCRxObT0bIbgEQdFELn4ZwzZeNbHQBwj/o%3D" alt="Serviço 6">
+                <h3>Consultoria em Data Governance</h3>
+                <p>Garanta a segurança e conformidade dos seus dados. Nossas soluções de governança de dados ajudam sua empresa a implementar políticas e processos para garantir a integridade e proteção das informações.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer style="background-color: #114bbf; color: white; text-align: center; padding: 20px;">
+        <p>&copy; 2020 AlphaData Consultoria. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

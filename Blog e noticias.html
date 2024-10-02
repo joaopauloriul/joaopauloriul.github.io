@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog e Notícias</title>
+
+    <!-- Fonte Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS Interno */
+        h2 {
+            font-size: 2.5em;
+            color: black;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .blog-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px px;
+        }
+
+        .blog-card {
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(248, 247, 247, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card h3 {
+            margin: 15px 0;
+            font-size: 1.2em;
+            color: white;
+        }
+
+        .blog-card p {
+            font-size: 1em;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .blog-card a {
+            text-decoration: none;
+            color: white;
+            background-color: #114bbf;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .blog-card a:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <header style="background: linear-gradient(90deg, #000000, #114bbf); padding: 20px; color: white; text-align: center;">
+        <h1>Blog e Notícias</h1>
+        <nav>
+            <ul style="list-style-type: none; margin: 0; padding: 0;">
+                <li style="display: inline; margin-right: 10px;"><a href="index.html" style="color: white;">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Notícias</h2>
+        <div class="blog-container">
+            <!-- Artigo 1 -->
+            <article class="blog-card">
+                <h3>Papel da tecnologia Big Data no armazenamento e segurança dos Dados</h3>
+                <a href="https://inforchannel.com.br/2024/06/04/papel-da-tecnologia-big-data-no-armazenamento-e-seguranca-dos-dados/">Leia Mais</a>
+            </article>
+
+            <!-- Artigo 2 -->
+            <article class="blog-card">
+                <h3>6 previsões sobre o futuro da nuvem nas empresas</h3>
+                <a href="https://www.datacenterdynamics.com/br/not%C3%ADcias/6-previsoes-sobre-o-futuro-da-nuvem-nas-empresas/">Leia Mais</a>
+            </article>
+
+            <!-- Artigo 3 -->
+            <article class="blog-card">
+                <h3>Claranet lista principais tendências em cibersegurança para os próximos anos</h3>
+                <a href="https://www.datacenterdynamics.com/br/not%C3%ADcias/claranet-lista-principais-tendencias-em-ciberseguranca-para-os-proximos-anos/">Leia Mais</a>
+            </article>
+
+            <!-- Artigo 4 -->
+            <article class="blog-card">
+                <h3>Gartner prevê que 30% das empresas automatizarão mais da metade de suas atividades de rede até 2026</h3> 
+                <a href="https://www.datacenterdynamics.com/br/not%C3%ADcias/gartner-preve-que-30-das-empresas-automatizarao-mais-da-metade-de-suas-atividades-de-rede-ate-2026/">Leia Mais</a>
+            </article>
+        </div>
+    </section>
+
+    <footer style="background-color: #114bbf;color: white; text-align: center; padding: 20px;">
+        <p>&copy; 2020 AlphaData Consultoria. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
